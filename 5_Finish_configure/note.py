@@ -3,7 +3,7 @@
 1) cd website
 
 -Make a python file
-2) sudo emacs webapp.py
+2) sudo emacs website.py
 
 -Copy and past this code
 
@@ -18,14 +18,14 @@ if __name__ == '__main__':
   app.run() 
 
 -Create a wsgi file
-3) sudo emacs webapp.wsgi
+3) sudo emacs website.wsgi
 
 -Copy and past this code
 
 import sys
 sys.path.insert(0, '/var/www/html/website')
 
-from webapp import app as application
+from website import app as application
 
 -Edit the 000-default.conf file 
 4) sudo emacs /etc/apache2/sites-enabled/000-default.conf
@@ -33,10 +33,10 @@ from webapp import app as application
 -Add this line of code below /var/www/html 
 
 WSGIDaemonProcess website threads=5
-WSGIScriptAlias / /var/www/html/website/webapp.wsgi
+WSGIScriptAlias / /var/www/html/website/website.wsgi
 
 <Directory website>
-    WSGIProcessGroup webapp
+    WSGIProcessGroup website
     WSGIApplicationGroup %{GLOBAL}
     Order deny,allow
     Allow from all
