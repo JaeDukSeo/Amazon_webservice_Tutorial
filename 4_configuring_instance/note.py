@@ -27,9 +27,9 @@ Please copy and paste the command line below.
 ++8) sudo pip install flask
 -Make directoy and link it to /var/www/html
 
-++9) mkdir website
+++9) mkdir ~/website
 -Link it
 
-++10) sudo ln -sT /website /var/www/html/website
+++10) sudo ln -sT ~/website /var/www/html/website
 ----------THIS IS FOR PART 4--------------------------
 
