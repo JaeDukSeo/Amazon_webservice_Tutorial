@@ -1,6 +1,6 @@
 
 -Change direcotry 
-1) cd website
+1) cd ~/website
 
 -Make a python file
 2) sudo emacs website.py
