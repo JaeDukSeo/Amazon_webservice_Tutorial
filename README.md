@@ -46,7 +46,7 @@ Please copy and paste the command line below.
 ```
 -Link it 
 ```diff
-++10) sudo ln -sT /website /var/www/html/flaskapp
+++10) sudo ln -sT /website /var/www/html/website
 ```
 ----------THIS IS FOR PART 4--------------------------
 
